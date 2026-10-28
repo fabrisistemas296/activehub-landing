@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ActiveHub · Actividades deportivas, recreativas y formativas</title>
+  <meta name="description" content="ActiveHub conecta alumnos, instructores y administradores en una sola plataforma: explorá actividades, inscribite, pagá con Mercado Pago y gestioná tus clases." />
+  <meta name="theme-color" content="#0E2A47" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ActiveHub · Tu actividad, en un solo lugar" />
+  <meta property="og:description" content="Explorá, inscribite y pagá clases de running, trekking, meditación, defensa personal y más. Instructores verificados y pagos protegidos." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--
+    Los botones que llevan a la aplicación tienen el atributo data-app-link.
+    Cuando la app esté desplegada, reemplazá https://activehub-app.vercel.app
+    por su URL real (buscar "data-app-link" en este archivo).
+  -->
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo" aria-label="ActiveHub, ir al inicio">
+        <span class="logo-mark">A</span>
+        <span class="logo-word">Active<span>Hub</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-burger" aria-label="Abrir menú"><span></span></label>
+
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#problema">Problema</a>
+        <a href="#solucion">Solución</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#faq">Preguntas</a>
+        <a href="https://activehub-app.vercel.app/login" data-app-link class="nav-login">Iniciar sesión</a>
+        <a href="#empezar" class="btn btn-cta btn-sm">Empezar gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-light">Hecho en Mendoza · para toda la Argentina</span>
+          <h1>Tu próxima actividad, a <em>un click</em>.</h1>
+          <p class="lead">
+            ActiveHub reúne en una sola plataforma a quienes quieren moverse y a quienes enseñan:
+            encontrá clases de running, trekking, meditación o defensa personal cerca tuyo,
+            inscribite en segundos y pagá con la tranquilidad de que tu dinero está protegido.
+          </p>
+          <div class="hero-actions">
+            <a href="#empezar" class="btn btn-cta">Quiero empezar</a>
+            <a href="#como-funciona" class="btn btn-ghost-light">Ver cómo funciona</a>
+          </div>
+          <ul class="hero-points">
+            <li>Instructores verificados</li>
+            <li>Pagos con Mercado Pago</li>
+            <li>Asistente con IA</li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta de actividad, dibujada en HTML/CSS -->
+        <div class="hero-card" aria-hidden="true">
+          <div class="mock-card">
+            <div class="mock-photo">
+              <span class="badge badge-amber">Últimos cupos</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-tags">
+                <span class="chip">Aventura</span>
+                <span class="chip chip-level">Física media</span>
+              </div>
+              <h3>Trekking al Cerro Arco</h3>
+              <p class="mock-meta">Sábado 08:00 · Prof. Laura M. · ★ 4,9</p>
+              <div class="mock-row">
+                <span class="mock-dist">📍 A 3,2 km de tu ubicación</span>
+                <span class="mock-price">$12.000</span>
+              </div>
+              <span class="mock-btn">Inscribirme</span>
+            </div>
+          </div>
+          <div class="mock-toast">
+            <span class="toast-dot"></span>
+            <div>
+              <strong>¡Inscripción confirmada!</strong>
+              <small>Tu pago queda retenido hasta la clase.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRANJA DE CATEGORÍAS -->
+    <section class="strip" aria-label="Categorías">
+      <!-- La lista va dos veces para que la cinta se repita sin cortes; la copia no se lee en voz alta -->
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-group">
+          <span>🧘 Bienestar</span>
+          <span>⛰️ Aventura</span>
+          <span>🛠️ Formación técnica</span>
+          <span>🥋 Defensa personal</span>
+          <span>🏃 Running</span>
+          <span>🌿 Senderismo</span>
+          <span>🧠 Meditación</span>
+          <span>🤸 Gimnasia</span>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+          <span>🧘 Bienestar</span>
+          <span>⛰️ Aventura</span>
+          <span>🛠️ Formación técnica</span>
+          <span>🥋 Defensa personal</span>
+          <span>🏃 Running</span>
+          <span>🌿 Senderismo</span>
+          <span>🧠 Meditación</span>
+          <span>🤸 Gimnasia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section id="problema" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">El problema</span>
+          <h2>Hoy, hacer una actividad es más difícil de lo que debería.</h2>
+          <p>La oferta existe, pero está desperdigada entre historias de Instagram, grupos de WhatsApp y planillas. Pierden todos.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="pain-card">
+            <h3><span class="pain-icon">🙋</span> Para quien quiere entrenar</h3>
+            <ul class="pain-list">
+              <li><strong>Información dispersa.</strong> Horarios, precios y lugares en posteos que se pierden.</li>
+              <li><strong>Sin saber si hay lugar.</strong> Hay que escribir, esperar respuesta y cruzar los dedos.</li>
+              <li><strong>Pagos a ciegas.</strong> Transferencias por adelantado sin respaldo si la clase no se da.</li>
+              <li><strong>Desconfianza.</strong> No hay forma de saber si el instructor está capacitado ni qué opinan otros alumnos.</li>
+            </ul>
+          </article>
+          <article class="pain-card">
+            <h3><span class="pain-icon">🧑‍🏫</span> Para quien enseña</h3>
+            <ul class="pain-list">
+              <li><strong>Gestión manual.</strong> Listas de alumnos en el celular y cupos contados a mano.</li>
+              <li><strong>Cobros desordenados.</strong> Efectivo, transferencias y deudas difíciles de seguir.</li>
+              <li><strong>Poca visibilidad.</strong> Depende del algoritmo de una red social para llegar a nuevos alumnos.</li>
+              <li><strong>Sin números.</strong> No sabe cuánto ganó, qué clase funciona mejor ni cómo crece.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUCIÓN -->
+    <section id="solucion" class="section section-navy">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow eyebrow-light">La solución</span>
+          <h2>Una plataforma, tres roles, todo el circuito resuelto.</h2>
+          <p>Desde que alguien descubre una actividad hasta que el instructor cobra, cada paso pasa por ActiveHub, con reglas claras y trazabilidad completa.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="role-card">
+            <span class="role-tag role-alumno">Alumno</span>
+            <h3>Descubrí, inscribite, disfrutá.</h3>
+            <ul class="check-list">
+              <li>Catálogo con filtros, mapa y distancia</li>
+              <li>Recomendaciones según tus intereses</li>
+              <li>PreInscripción e inscripción con cupo garantizado</li>
+              <li>Pago con tarjeta o en efectivo</li>
+              <li>Favoritos, calendario y reseñas</li>
+            </ul>
+          </article>
+          <article class="role-card role-card-featured">
+            <span class="role-tag role-instructor">Instructor</span>
+            <h3>Enseñá. Del resto nos ocupamos.</h3>
+            <ul class="check-list">
+              <li>Publicá actividades con fotos y ubicación</li>
+              <li>Clases recurrentes que se programan solas</li>
+              <li>Lista de inscriptos y estado de cada pago</li>
+              <li>Cobro directo a tu cuenta de Mercado Pago</li>
+              <li>Métricas, historial y exportación a PDF/CSV</li>
+            </ul>
+          </article>
+          <article class="role-card">
+            <span class="role-tag role-admin">Administrador</span>
+            <h3>Control total de la plataforma.</h3>
+            <ul class="check-list">
+              <li>Validación de instructores con su documentación</li>
+              <li>Gestión de denuncias, reintegros y sanciones</li>
+              <li>Roles y permisos configurables sin tocar código</li>
+              <li>Auditoría de cada operación crítica</li>
+              <li>Dashboard y reportes exportables</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section id="funcionalidades" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Funcionalidades principales</span>
+          <h2>Todo lo que necesitás, ya construido.</h2>
+        </div>
+
+        <div class="grid grid-3 features">
+          <article class="feature">
+            <div class="feature-icon fi-teal">🔎</div>
+            <h3>Explorar inteligente</h3>
+            <p>Buscá sin preocuparte por las tildes y filtrá por categoría, tipo, nivel de intensidad, precio, fecha, horario y rango de distancia.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-navy">🗺️</div>
+            <h3>Mapa y cercanía</h3>
+            <p>Cada actividad muestra su ubicación en el mapa y a cuántos kilómetros está de vos, con OpenStreetMap.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-orange">🎯</div>
+            <h3>Recomendado para vos</h3>
+            <p>Un motor de recomendaciones cruza tus intereses, tu historial y tu ubicación, y te explica por qué te sugiere cada actividad.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-teal">📝</div>
+            <h3>PreInscripción e inscripción</h3>
+            <p>¿Falta más de 4 días? PreInscribite y te avisamos. A partir de ahí, asegurá tu lugar hasta 1 hora antes, sin sobreventa de cupos.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-navy">💳</div>
+            <h3>Pagos con Mercado Pago</h3>
+            <p>Modelo marketplace: cada instructor cobra en su propia cuenta. Inscribirse reserva el importe y se cobra cuando la clase empieza.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-orange">🤖</div>
+            <h3>Asistente con IA</h3>
+            <p>Un chat que responde dudas basándose sólo en el manual de usuario, y un informe de beneficios y prevenciones para cada actividad.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-teal">🔔</div>
+            <h3>Notificaciones</h3>
+            <p>Avisos en la app y por correo: clases habilitadas, cancelaciones, respuestas a reseñas. Cada aviso te lleva directo al asunto.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-navy">⭐</div>
+            <h3>Reseñas verificadas</h3>
+            <p>Sólo opina quien realmente estuvo inscripto en una clase finalizada. El instructor puede responder y denunciar abusos.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-icon fi-orange">🛡️</div>
+            <h3>Denuncias y reintegros</h3>
+            <p>¿El instructor no se presentó? Reportalo y la administración resuelve: reintegro, suspensión o penalización.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTRUCTOR SPOTLIGHT -->
+    <section class="section section-soft">
+      <div class="container split">
+        <div class="split-media">
+          <img src="assets/instructor.webp" alt="Instructor entrenando con banda elástica en un gimnasio" width="1000" height="667" loading="lazy" />
+          <div class="split-stat">
+            <span>Ingresos acreditados</span>
+            <strong>$ 486.000</strong>
+            <small>Ejemplo ilustrativo del panel de métricas</small>
+          </div>
+        </div>
+        <div class="split-copy">
+          <span class="eyebrow">Para instructores</span>
+          <h2>Tu negocio, ordenado desde el primer día.</h2>
+          <p>Publicás una actividad una vez, definís sus horarios y ActiveHub genera las clases de cada semana. Ves quién se inscribió, quién pagó y quién paga en efectivo, y lo confirmás con un click.</p>
+          <ul class="check-list check-dark">
+            <li><strong>Agendas recurrentes:</strong> "todos los martes y jueves a las 19" sin cargar clase por clase.</li>
+            <li><strong>Precio congelado:</strong> si cambiás el precio, no afecta a quien ya se inscribió.</li>
+            <li><strong>Métricas reales:</strong> ingresos acreditados, retenidos, inscripciones por actividad.</li>
+            <li><strong>Perfil público</strong> con calificación promedio y todas tus actividades.</li>
+          </ul>
+          <a href="https://activehub-app.vercel.app/registro" data-app-link class="btn btn-primary">Quiero ser instructor</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLUJO DE PAGO -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pagos protegidos</span>
+          <h2>Tu dinero no se mueve hasta que la clase sucede.</h2>
+          <p>Un circuito pensado para que alumnos e instructores confíen el uno en el otro.</p>
+        </div>
+
+        <ol class="flow">
+          <li class="flow-step">
+            <span class="flow-num">1</span>
+            <span class="badge badge-amber">Retenido</span>
+            <h3>Te inscribís</h3>
+            <p>El importe queda reservado en tu tarjeta. Todavía no se cobra.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-num">2</span>
+            <span class="badge badge-navy">Cobrado</span>
+            <h3>La clase empieza</h3>
+            <p>Recién ahí se captura el pago. Si cancelás con más de 24 h, se libera la retención.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-num">3</span>
+            <span class="badge badge-orange">24 h de reclamo</span>
+            <h3>Ventana de denuncias</h3>
+            <p>Si el instructor no se presentó, lo reportás y la administración puede reintegrarte.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-num">4</span>
+            <span class="badge badge-teal">Liberado</span>
+            <h3>El instructor cobra</h3>
+            <p>Sin reclamos, el dinero queda acreditado en su cuenta de Mercado Pago.</p>
+          </li>
+        </ol>
+        <p class="flow-note">¿Preferís pagar en efectivo? También se puede: tu inscripción queda <strong>PagoPendiente</strong> hasta que el instructor confirma el cobro.</p>
+      </div>
+    </section>
+
+    <!-- VENTAJAS COMPETITIVAS -->
+    <section id="ventajas" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Ventajas competitivas</span>
+          <h2>Por qué ActiveHub y no lo de siempre.</h2>
+        </div>
+
+        <div class="grid grid-3 advantages">
+          <article class="adv">
+            <h3>Confianza de punta a punta</h3>
+            <p>Instructores validados con su documentación, reseñas sólo de alumnos reales y pagos retenidos hasta la clase.</p>
+          </article>
+          <article class="adv">
+            <h3>Pensado para actividades, no para gimnasios</h3>
+            <p>Trekking, meditación, cursos técnicos o defensa personal: clases con fecha, lugar, nivel y edad, no sólo membresías.</p>
+          </article>
+          <article class="adv">
+            <h3>Reglas de negocio claras</h3>
+            <p>PreInscripción, inscripción, cupos y cancelaciones siguen reglas fijas que el sistema hace cumplir. Nadie se queda sin lugar por un mensaje sin leer.</p>
+          </article>
+          <article class="adv">
+            <h3>Inteligencia que suma</h3>
+            <p>Recomendaciones explicadas, asistente que no inventa respuestas e informes personalizados de beneficios y precauciones.</p>
+          </article>
+          <article class="adv">
+            <h3>Auditable y configurable</h3>
+            <p>Cada operación crítica queda registrada. Nada se borra de verdad. Los permisos de cada rol se ajustan desde el panel.</p>
+          </article>
+          <article class="adv">
+            <h3>Sin intermediar tu dinero</h3>
+            <p>Cada instructor vincula su propia cuenta de Mercado Pago y cobra directo, sin esperar transferencias de la plataforma.</p>
+          </article>
+        </div>
+
+        <p class="table-hint">Deslizá la tabla para comparar →</p>
+        <div class="table-wrap">
+          <table class="compare">
+            <caption>Comparación con las alternativas más comunes</caption>
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col" class="col-us">ActiveHub</th>
+                <th scope="col">Redes sociales + WhatsApp</th>
+                <th scope="col">Software de gimnasio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Catálogo con filtros y mapa</th><td class="col-us yes">Sí</td><td class="no">No</td><td class="part">Parcial</td></tr>
+              <tr><th scope="row">Cupos en tiempo real</th><td class="col-us yes">Sí</td><td class="no">No</td><td class="yes">Sí</td></tr>
+              <tr><th scope="row">Pago retenido hasta la clase</th><td class="col-us yes">Sí</td><td class="no">No</td><td class="no">No</td></tr>
+              <tr><th scope="row">Instructores verificados</th><td class="col-us yes">Sí</td><td class="no">No</td><td class="part">Parcial</td></tr>
+              <tr><th scope="row">Reseñas de alumnos reales</th><td class="col-us yes">Sí</td><td class="no">No</td><td class="no">No</td></tr>
+              <tr><th scope="row">Recomendaciones personalizadas</th><td class="col-us yes">Sí</td><td class="part">Algoritmo genérico</td><td class="no">No</td></tr>
+              <tr><th scope="row">Reclamos y reintegros</th><td class="col-us yes">Sí</td><td class="no">No</td><td class="part">Parcial</td></tr>
+              <tr><th scope="row">Varios instructores independientes</th><td class="col-us yes">Sí</td><td class="part">Cada uno por su lado</td><td class="no">No</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>De la búsqueda a la clase, en cuatro pasos.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <h3>Creá tu cuenta</h3>
+            <p>Con tu correo o con Google. Contanos qué te interesa para recibir recomendaciones.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>Explorá</h3>
+            <p>Filtrá por categoría, nivel, precio o distancia. Mirá fotos, reseñas y el perfil del instructor.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>Asegurá tu lugar</h3>
+            <p>PreInscribite si falta más de 4 días o inscribite directamente y pagá como prefieras.</p>
+          </li>
+          <li>
+            <span class="step-num">04</span>
+            <h3>Entrená y opiná</h3>
+            <p>Recibí recordatorios, asistí a tu clase y dejá tu reseña para ayudar a otros.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SEGURIDAD + STACK -->
+    <section class="section section-navy section-tight">
+      <div class="container">
+        <div class="grid grid-2 trust">
+          <div>
+            <span class="eyebrow eyebrow-light">Seguridad</span>
+            <h2>Construido para ser confiable.</h2>
+            <ul class="check-list">
+              <li>Verificación de correo con código de 6 dígitos</li>
+              <li>Sesiones con token que vencen por inactividad</li>
+              <li>Ingreso con Google</li>
+              <li>Baja lógica: el historial se conserva para auditoría</li>
+              <li>Permisos por módulo, controlados también en el servidor</li>
+            </ul>
+          </div>
+          <div>
+            <span class="eyebrow eyebrow-light">Tecnología</span>
+            <h2>Un stack moderno y probado.</h2>
+            <div class="stack">
+              <span>Java 21 · Spring Boot</span>
+              <span>React · TypeScript · Vite</span>
+              <span>PostgreSQL · Supabase</span>
+              <span>Mercado Pago</span>
+              <span>OpenStreetMap · Leaflet</span>
+              <span>IA generativa</span>
+            </div>
+            <p class="muted-light">Arquitectura por casos de uso, con pruebas automatizadas en backend y frontend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Lo que más nos preguntan.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>¿Cuál es la diferencia entre PreInscripción e inscripción?</summary>
+            <p>Si faltan más de 4 días para la clase, podés PreInscribirte: registrás tu interés y te avisamos cuando se habilita la inscripción, sin ocupar cupo ni pagar. Desde 4 días antes y hasta 1 hora antes del inicio, te inscribís de forma definitiva si quedan cupos.</p>
+          </details>
+          <details>
+            <summary>¿Cuándo se me cobra?</summary>
+            <p>Con Mercado Pago, al inscribirte el importe queda retenido en tu tarjeta y se cobra cuando empieza la clase. Si pagás en efectivo, se lo abonás al instructor y él confirma el cobro en la plataforma.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si cancelo?</summary>
+            <p>El cupo se libera siempre. Si cancelás con más de 24 horas de anticipación, la retención de tu tarjeta se libera y no se te cobra nada. Con menos de 24 horas, la cancelación no tiene reintegro, y la plataforma te lo avisa antes de confirmar.</p>
+          </details>
+          <details>
+            <summary>¿Y si el instructor no se presenta?</summary>
+            <p>Desde "Mis clases" podés reportar la inasistencia en las 24 horas siguientes. La administración revisa el caso y puede reintegrar el pago a todos los inscriptos y sancionar al instructor.</p>
+          </details>
+          <details>
+            <summary>¿Cómo me registro como instructor?</summary>
+            <p>Te registrás eligiendo el rol Instructor y adjuntás tu documentación o certificaciones (PDF, JPG o PNG). Un administrador la revisa y, una vez aprobada, ya podés publicar actividades y vincular tu cuenta de Mercado Pago.</p>
+          </details>
+          <details>
+            <summary>¿El asistente con IA me da indicaciones médicas?</summary>
+            <p>No. El informe de beneficios y prevenciones es orientativo, no es un diagnóstico médico y no condiciona tu inscripción. Tus datos de salud son opcionales y el instructor no los ve.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="empezar" class="cta">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <h2>Empezá a moverte hoy.</h2>
+        <p>Creá tu cuenta gratis y encontrá tu próxima actividad, o sumate como instructor y llegá a nuevos alumnos.</p>
+        <div class="hero-actions">
+          <a href="https://activehub-app.vercel.app/registro" data-app-link class="btn btn-cta">Registrarme como alumno</a>
+          <a href="https://activehub-app.vercel.app/registro" data-app-link class="btn btn-ghost-light">Soy instructor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo" aria-label="ActiveHub, ir al inicio">
+          <span class="logo-mark">A</span>
+          <span class="logo-word logo-word-light">Active<span>Hub</span></span>
+        </a>
+        <p>Plataforma de gestión de actividades deportivas, recreativas y formativas.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Pie de página">
+        <div>
+          <h4>Producto</h4>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#ventajas">Ventajas</a>
+          <a href="#como-funciona">Cómo funciona</a>
+        </div>
+        <div>
+          <h4>Ayuda</h4>
+          <a href="#faq">Preguntas frecuentes</a>
+          <a href="https://activehub-app.vercel.app/manual" data-app-link>Manual de usuario</a>
+          <a href="https://activehub-app.vercel.app/ayuda" data-app-link>Centro de ayuda</a>
+        </div>
+        <div>
+          <h4>Cuenta</h4>
+          <a href="https://activehub-app.vercel.app/login" data-app-link>Iniciar sesión</a>
+          <a href="https://activehub-app.vercel.app/registro" data-app-link>Registrarse</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 ActiveHub · Proyecto Final · UTN Facultad Regional Mendoza</span>
+      <span>Hecho en Mendoza 🏔️</span>
+    </div>
+  </footer>
+</body>
+</html>
